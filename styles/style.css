@@ -93,6 +93,7 @@ nav ul li a{
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .product{
     /* width: 330px; */
@@ -132,4 +133,14 @@ nav ul li a{
 .details{
     font-size: 14px;
     color: #787885;
+}
+
+.more-product-link a{
+    text-decoration: none;
+    color: #a72606;
+    font-size: 16px;
+    font-weight: 700;
+}
+.more-product-link{
+    text-align: right;
 }
