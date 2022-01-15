@@ -53,8 +53,9 @@ nav ul li a{
     padding: 10px;
     border-radius: 20px;
     color: #FFFFFF;
-    background-color: crimson;
+    background-color: #d12245;
     border: 0;
+    cursor: pointer;
 }
 .journey-images img{
     height: 415px;
@@ -143,4 +144,56 @@ nav ul li a{
 }
 .more-product-link{
     text-align: right;
+}
+
+
+
+/* ----------feature section-------- */
+.feature{
+    margin: 0 130px;
+    display: flex;
+    margin-top: 100px;
+}
+.feature-image img{
+    width: 404px;
+    height: 270px;
+}
+.my-feature{
+    margin-left: 96px;
+}
+.my-feature h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.my-feature p{
+    font-size: 16px;
+}
+
+/* -------------footer section---------- */
+footer{
+    margin-top: 100px;
+    background-color: #031818;
+    text-align: center;
+}
+.footer-section{
+    padding: 50px 0;
+}
+.footer-section h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.footer-section p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #D9DBE1;
+}
+.social-icon a img{
+    height: 17px;
+    width: 17px;
+}
+.social-icon a{
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 0 10px;
 }
