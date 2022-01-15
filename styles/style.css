@@ -1,9 +1,5 @@
 /* --------nav-bar styles----- */
-/* header{
-    width: 870px;
-    text-align: center;
-    
-} */
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -14,10 +10,9 @@ nav{
     
     margin: 0 130px;
     margin-bottom: 20px;
-    
 }
+
 nav h2{
-    
     font-size: 24px;
     font-weight: 700;
 }
@@ -60,8 +55,8 @@ nav ul li a{
 .journey-images img{
     height: 415px;
     width: 450px;
-    
-}
+    }
+
 header:hover .journey .journey-images {
     transform: rotate(360deg);
     transition: 3s;
@@ -69,7 +64,6 @@ header:hover .journey .journey-images {
 
 .advertise{
     margin: 0 130px;
-    
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     margin-top: 20px;
@@ -81,8 +75,6 @@ header:hover .journey .journey-images {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
 }
 .advertise ul li img{
     height: 26px;
@@ -102,7 +94,6 @@ header:hover .journey .journey-images {
     margin-bottom: 30px;
 }
 .product{
-    /* width: 330px; */
     padding: 17px 15px;
     box-shadow: 0px 5px 12px #dcdcdc;
     border-radius: 10px;
@@ -172,8 +163,16 @@ header:hover .journey .journey-images {
 }
 .my-feature p{
     font-size: 16px;
+ }
+.join-button{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 7px;
+    color: #FFFFFF;
+    background-color: #b9062a;
+    border: 0;
+    cursor: pointer;
 }
-
 /* -------------footer section---------- */
 footer{
     margin-top: 100px;
@@ -201,4 +200,119 @@ footer{
     justify-content: space-between;
     text-decoration: none;
     padding: 0 10px;
+}
+
+
+
+/* ----------------media query--------------- */
+@media only  screen and (max-width: 688px) {
+    nav{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    nav ul li{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .journey{
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        order: 1;
+    }
+    .my-journey{
+        order: 2;
+    }
+    .my-journey h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .journey-images{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        order: 1;
+    }
+    .journey-images img{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    /* -----main part----- */
+    .advertise{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .advertise ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    .advertise ul li img{
+        height: 15px;
+        width: 35px;
+    }
+/* ---------------product collection----- */
+    .product-collection{
+        margin: 0;
+        margin-top: 100px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0;
+        margin-left: 0;
+    }
+    .product{
+        width: 100%;
+        padding: 0;
+    }
+    .more-product-link{
+        text-align: center;
+    }
+
+    /* ---------------feature part------------- */
+    
+    .feature{
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .feature-image img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .my-feature{
+        margin: 0;
+    }
+    .my-feature h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    footer{
+        margin-top: 50px;
+    }
+    .footer-section{
+        padding: 15px 0;
+    }
 }
